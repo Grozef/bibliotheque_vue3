@@ -53,7 +53,7 @@ const applyFilter = () => {
 
 const handleDelete = async (bookId) => {
   try {
-    await deleteBook(bookId) // Assurez-vous que deleteBook est défini dans le store
+    await deleteBook(bookId) 
     await fetchAllBooks() // Recharger la liste des livres après suppression
   } catch (error) {
     console.error('Failed to delete book:', error)

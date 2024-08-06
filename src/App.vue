@@ -17,8 +17,8 @@ import { RouterLink, RouterView } from 'vue-router'
           <li>
             <router-link to="/" class="current">Accueil</router-link>
           </li>
-          <li class="current"><a href="index.html">Liste des livres</a></li>
-          <li><router-link to="/books">Edition des livres</router-link></li>
+          <!-- <li class="current"><a href="index.html">Liste des livres</a></li> -->
+          <li><router-link to="/books">Liste des livres</router-link></li>
         </ul>
       </nav>
 
