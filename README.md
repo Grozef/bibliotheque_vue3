@@ -21,7 +21,14 @@ npm install
 ```sh
 npm run dev
 ```
-
+```sh
+ouvrir une nuovelle fenetre terminal
+cd my-project
+cd my-backend
+npm init -y
+npm install
+node server.js
+```
 ### Compile and Minify for Production
 
 ```sh
