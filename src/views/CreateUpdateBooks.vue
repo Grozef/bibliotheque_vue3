@@ -22,11 +22,11 @@
 			  </select>
 			</div>
 			<div class="col-6 col-12-small">
-			  <input v-model="publicationDate" name="Date de Publication" placeholder="Date de Publication" type="text" />
+			  <input v-model="publicationDate" name="publicationDate" placeholder="Date de Publication" type="text" />
 			</div>
 			<div class="col-12">
 			  <button type="submit" class="form-button-submit button icon solid fa-pen">{{ btnLabel }}</button>
-			  <!-- Afficher le bouton de suppression seulement en mode édition -->
+			  <!-- Afficher le bouton de suppression seulement en mode édition à refacto -->
 			  <button v-if="onEditMode" @click="handleDelete" type="button" class="button delete-button">Delete</button>
 			</div>
 		  </div>
@@ -52,7 +52,7 @@
   const title = ref('')
   const firstName = ref('')
   const lastName = ref('')
-  const coverUrl = ref('')
+  const publicationDate = ref('')
   const genre = ref('Policier')
   
   const pageTitle = computed(() => (onEditMode.value ? 'ÉDITION' : 'CRÉATION'))
@@ -65,7 +65,7 @@
 		firstName: firstName.value,
 		lastName: lastName.value
 	  },
-	  coverUri: coverUrl.value,
+	  publicationDate: publicationDate.value,
 	  genre: genre.value
 	}
   
@@ -100,7 +100,7 @@
 	  title.value = thisBook.title
 	  firstName.value = thisBook.author.firstName
 	  lastName.value = thisBook.author.lastName
-	  coverUrl.value = thisBook.coverUri
+	  publicationDate.value = thisBook.publicationDate
 	  genre.value = thisBook.genre
 	}
   }
