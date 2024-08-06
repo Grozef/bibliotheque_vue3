@@ -26,12 +26,15 @@
 			</div>
 			<div class="col-12">
 			  <button type="submit" class="form-button-submit button icon solid fa-pen">{{ btnLabel }}</button>
+			  <!-- Afficher le bouton de suppression seulement en mode édition -->
+			  <button v-if="onEditMode" @click="handleDelete" type="button" class="button delete-button">Delete</button>
 			</div>
 		  </div>
 		</form>
 	  </div>
 	</section>
   </template>
+  
   
   <script setup>
   import { ref, computed, onBeforeMount } from 'vue'
@@ -41,7 +44,7 @@
   const route = useRoute()
   const router = useRouter()
   const bookStore = useBookStore()
-  const { createNewBook, updateBook, fetchOneBook } = bookStore
+  const { createNewBook, updateBook, fetchOneBook, deleteBook } = bookStore
   
   const onEditMode = ref(false)
   const bookId = ref(null)
@@ -79,6 +82,18 @@
 	}
   }
   
+  const handleDelete = async () => {
+	if (!bookId.value) return
+  
+	try {
+	  await deleteBook(bookId.value)
+	  // Redirection vers la liste des livres après la suppression
+	  router.push({ name: 'books-list' })
+	} catch (error) {
+	  console.error('Failed to delete book:', error)
+	}
+  }
+  
   const initRefs = async () => {
 	if (bookId.value) {
 	  const thisBook = await fetchOneBook(bookId.value)
@@ -101,6 +116,8 @@
 	}
   })
   </script>
+  
+
   
   <style>
   /* Ajoute tes styles ici si nécessaire */
