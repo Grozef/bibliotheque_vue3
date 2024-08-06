@@ -10,7 +10,7 @@
     <div v-if="filteredBooks.length">
       <ul>
         <li v-for="book in filteredBooks" :key="book._id">
-          {{ book.title }} - {{ book.author.firstName + ' ' + book.author.lastName }}
+          {{ book.title }} - {{ book.author.firstName + ' ' + book.author.lastName }} - {{ book.publicationDate }}
           <button @click="navigateToEdit(book._id)" class="button edit-button">Edit</button>
           <button @click="handleDelete(book._id)" class="button delete-button">Delete</button>
         </li>

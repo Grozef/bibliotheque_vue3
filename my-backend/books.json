@@ -1,0 +1,102 @@
+[
+  {
+    "_id": "1",
+    "title": "Dune",
+    "author": {
+      "firstName": "Frank",
+      "lastName": "Herbert"
+    },
+    "publicationDate": "1965-08-01",
+    "genre": "Science Fiction"
+  },
+  {
+    "_id": "2",
+    "title": "Neuromancien",
+    "author": {
+      "firstName": "William",
+      "lastName": "Gibson"
+    },
+    "publicationDate": "1984-07-01",
+    "genre": "Science Fiction"
+  },
+  {
+    "_id": "3",
+    "title": "Le Left Hand of Darkness",
+    "author": {
+      "firstName": "Ursula K.",
+      "lastName": "Le Guin"
+    },
+    "publicationDate": "1969-03-01",
+    "genre": "Science Fiction"
+  },
+  {
+    "_id": "4",
+    "title": "Le Grand Sommeil",
+    "author": {
+      "firstName": "Raymond",
+      "lastName": "Chandler"
+    },
+    "publicationDate": "1939-01-01",
+    "genre": "Policier"
+  },
+  {
+    "_id": "5",
+    "title": "Les Apparences",
+    "author": {
+      "firstName": "Gillian",
+      "lastName": "Flynn"
+    },
+    "publicationDate": "2012-06-05",
+    "genre": "Policier"
+  },
+  {
+    "_id": "6",
+    "title": "Les Filles du dragon",
+    "author": {
+      "firstName": "Stieg",
+      "lastName": "Larsson"
+    },
+    "publicationDate": "2005-08-01",
+    "genre": "Policier"
+  },
+  {
+    "_id": "7",
+    "title": "Tous les Feux du Ciel",
+    "author": {
+      "firstName": "Anthony",
+      "lastName": "Doerr"
+    },
+    "publicationDate": "2014-05-06",
+    "genre": "Historique"
+  },
+  {
+    "_id": "8",
+    "title": "La Voleuse de Livres",
+    "author": {
+      "firstName": "Markus",
+      "lastName": "Zusak"
+    },
+    "publicationDate": "2005-03-14",
+    "genre": "Historique"
+  },
+  {
+    "_id": "9",
+    "title": "Le Chardonneret",
+    "author": {
+      "firstName": "Kristin",
+      "lastName": "Hannah"
+    },
+    "publicationDate": "2015-02-03",
+    "genre": "Historique"
+  },
+  {
+    "_id": "10",
+    "title": "Expiation",
+    "author": {
+      "firstName": "Ian",
+      "lastName": "McEwan"
+    },
+    "publicationDate": "2001-09-01",
+    "genre": "Historique"
+  }
+]

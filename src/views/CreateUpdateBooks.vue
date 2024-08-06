@@ -22,7 +22,7 @@
 			  </select>
 			</div>
 			<div class="col-6 col-12-small">
-			  <input v-model="coverUrl" name="coverUrl" placeholder="Cover URL" type="text" />
+			  <input v-model="publicationDate" name="Date de Publication" placeholder="Date de Publication" type="text" />
 			</div>
 			<div class="col-12">
 			  <button type="submit" class="form-button-submit button icon solid fa-pen">{{ btnLabel }}</button>
